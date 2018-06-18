@@ -1,19 +1,25 @@
 import React from 'react';
+import Webcam from 'react-webcam';
 
 class Video extends React.Component {
     render() {
-        const video = <video src='stream' id="video" width="640" height="480" autoPlay></video>;
-        video.id = 'videoId'
-        // if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
-        //     // Not adding `{ audio: true }` since we only want video now
-        //     navigator.mediaDevices.getUserMedia({ video: true }).then(function (stream) {
-        //         video.src = HTMLMediaElement.srcObject;
-        //         video.play();
+        // var colors = new tracking.ColorTracker(['magenta', 'cyan', 'yellow']);
+
+        // colors.on('track', function(event) {
+        //     if (event.data.length === 0) {
+        //     // No colors were detected in this frame.
+        //     } else {
+        //     event.data.forEach(function(rect) {
+        //         console.log(rect.x, rect.y, rect.height, rect.width, rect.color);
         //     });
-        // }
+        //     }
+        // });
+        // tracking.track('#myVideo', colors);
+
         return (
             <div id='test'>
-                {video}
+                <Webcam audio={false} height={350}/>
+                {/* <video id="myVideo" width="400" height="300" preload='true' autoPlay loop muted></video> */}
                 <button id="snap">Snap Photo</button>
                 <canvas id="canvas" width="640" height="480"></canvas>
             </div>

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
-import Video from './components/video';
+// import Video from './components/video';
+import ThreeDeeTest from './components/3dtest';
 
 export default class Container extends Component {
     
@@ -8,7 +9,8 @@ export default class Container extends Component {
         return (
             <div>
                 Container Component <br/>
-                <Video />
+                {/* <Video /> */}
+                <ThreeDeeTest />
             </div>
         )
     };

@@ -1,6 +1,5 @@
 import React from 'react';
 const THREE = require('three');
-import { THREE.JDLoader } from '../JDLoader.min.js';
 
 class ThreeDeeTest extends React.Component {
 

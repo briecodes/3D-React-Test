@@ -6,6 +6,8 @@
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-scripts": "1.1.4",
+    "react-three-renderer": "^3.2.4",
+    "react-three-renderer-objects": "0.0.6",
     "three": "^0.93.0",
     "three.ar.js": "^0.1.8"
   },
